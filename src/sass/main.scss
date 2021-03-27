@@ -1,3 +1,9 @@
 @import './modules/_Vars.scss';
 @import './modules/_Navigation.scss';
 @import './modules/_Home.scss';
+
+.dark {
+    img {
+        filter: brightness(0) !important;
+    }
+}
