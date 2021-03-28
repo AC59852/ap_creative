@@ -33,6 +33,7 @@ export default {
 
       projects: [
         {id: 1, class: "project", title: "October's Very Own", desc: `creating a connection between the user's music-interests and the content being displayed`, image: 'themockup.png'},
+        {id: 2, class: "project", title: "October's Very Own", desc: `creating a connection between the user's music-interests and the content being displayed`, image: 'themockup.png'},
       ]
     }
   },

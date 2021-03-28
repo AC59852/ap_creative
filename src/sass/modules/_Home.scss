@@ -9,6 +9,7 @@
         }
 
         .section {
+            overflow: hidden;
             h1, h2 {
                 font-family: $heading-font;
                 width: 80%;
@@ -21,7 +22,7 @@
 
             h2 {
                 font-size: 38px;
-                line-height: 50px;
+                line-height: 48px;
                 text-transform: uppercase;
                 font-weight: 800;
                 color: black;
@@ -40,22 +41,23 @@
 
             a {
                 font-family: $body-font;
-                font-size: 16px;
+                font-size: 15px;
                 width: 35%;
                 background-color: black;
                 color: white;
-                margin: 5% 0 9% 5%;
-                padding: 4% 2%;
+                margin: 5% 0 3% 5%;
+                padding: 3.5% 1.5% 4%;
                 text-align: center;
                 text-decoration: none;
                 border-radius: 5px;
             }
 
             img {
-                width: 82%;
+                width: 93%;
                 display: flex;
                 object-fit: cover;
-                margin: auto auto 0;
+                margin-left: auto;
+                transform: translateX(10%);
             }
 
             .project, .homeTop {
@@ -78,6 +80,8 @@
 
                 img {
                     width: 100%;
+                    margin: 0 auto;
+                    transform: translateX(0);
                 }
             }
         }
