@@ -1,9 +1,37 @@
 @import './modules/_Vars.scss';
 @import './modules/_Navigation.scss';
 @import './modules/_Home.scss';
+@import './modules/_About.scss';
 
 .dark {
     img {
         filter: brightness(0) !important;
+    }
+}
+
+#about {
+    &::-webkit-scrollbar {
+        display: block;
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #111111;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.212);
+        border-radius: 200px;
+        height: 20px;
+    }
+
+    &::-webkit-scrollbar-track-piece:end {
+        background: transparent;
+        margin-bottom: 4px;
+    }
+
+    &::-webkit-scrollbar-track-piece:start {
+        background: transparent;
+        margin-top: 4px;
     }
 }
