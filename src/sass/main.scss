@@ -9,7 +9,7 @@
     }
 }
 
-html {
+#about {
     &::-webkit-scrollbar {
         display: block;
         width: 6px;
@@ -20,7 +20,7 @@ html {
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.212);
         border-radius: 200px;
         height: 20px;
     }

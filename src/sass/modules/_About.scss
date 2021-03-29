@@ -1,14 +1,29 @@
 #about {
     background: $home-gradient;
+    height: 100vh;
+    overflow: auto;
     .aboutWrapper {
         padding-top: 20%;
+
         .aboutNames {
+            .active {
+                h2 {
+                    opacity: 1 !important;
+                }
+            }
+
             width: 100%;
             display: flex;
             justify-content: space-evenly;
             color: white;
             font: 700 24px $heading-font;
             margin-bottom: 10%;
+            
+            h2 {
+                cursor: pointer;
+                opacity: 0.2;
+                transition: opacity 0.4s ease;
+            }
         }
 
         .aboutContent {
@@ -32,11 +47,12 @@
             }
 
             p {
-                font: 700 16px $body-font;
+                font: 700 15px $body-font;
+                width: 97%;
+                margin: 0 auto;
             }
 
             .icons {
-
                 svg {
                     color: white;
                     font-size: 25px;
