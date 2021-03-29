@@ -1,0 +1,48 @@
+#about {
+    background: $home-gradient;
+    .aboutWrapper {
+        padding-top: 20%;
+        .aboutNames {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font: 700 24px $heading-font;
+            margin-bottom: 10%;
+        }
+
+        .aboutContent {
+            width: 85%;
+            margin: 0 auto;
+            justify-content: center;
+            color: white;
+
+            h3 {
+                font: 700 22px $heading-font;
+                text-transform: uppercase;
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            img {
+                width: 70%;
+                margin: 8% auto;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            p {
+                font: 700 16px $body-font;
+            }
+
+            .icons {
+
+                svg {
+                    color: white;
+                    font-size: 25px;
+                    margin: 6% 4% 10% 0;
+                }
+            }
+        }
+    }
+}

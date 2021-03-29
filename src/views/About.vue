@@ -4,7 +4,7 @@
       <div class="aboutNames">
         <h2 @click="changePerson(person)" v-for="person in people" :key="person.id">{{ person.name }}</h2>
       </div>
-      <AboutContent :currentPerson="currentPerson"/>
+      <AboutContent :currentPerson="currentPerson" class="aboutContent"/>
     </div>
   </section>
 </template>
