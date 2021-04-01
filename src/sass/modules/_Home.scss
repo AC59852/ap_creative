@@ -8,6 +8,10 @@
             background: linear-gradient(90deg, #7189C7 0%, rgba(27, 132, 155, 0.74) 100%);
         }
 
+        #section2 {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+        }
+
         .section {
             overflow: hidden;
             h1, h2 {
@@ -33,7 +37,7 @@
             p {
                 font-family: $body-font;
                 width: 85%;
-                letter-spacing: 5%;
+                letter-spacing: 0.2px;
                 line-height: 20px;
                 font-size: 16px;
                 font-weight: 600;
@@ -42,12 +46,13 @@
             a {
                 font-family: $body-font;
                 font-size: 15px;
+                display: flex;
+                justify-content: center;
                 width: 35%;
                 background-color: black;
                 color: white;
                 margin: 5% 0 3% 5%;
-                padding: 3.5% 1.5% 4%;
-                text-align: center;
+                padding: 3.5% 2%;
                 text-decoration: none;
                 border-radius: 5px;
             }
