@@ -2,6 +2,7 @@
 @import './modules/_Navigation.scss';
 @import './modules/_Home.scss';
 @import './modules/_About.scss';
+@import './modules/_Contact.scss';
 @import './modules/_Queries.scss';
 
 .dark {
@@ -44,4 +45,8 @@
 
 .test {
     background: #111111 !important;
+}
+
+.slideLeft {
+    transform: translateX(-100%);
 }

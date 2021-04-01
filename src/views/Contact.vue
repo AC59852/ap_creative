@@ -1,7 +1,7 @@
 <template>
   <section id="contact">
       <h1>{{ title }}</h1>
-      <span>{{ tagline }}</span>
+      <h2>{{ tagline }}</h2>
           <ContactForm :sent_message="sent_message"/>
   </section>
 </template>
