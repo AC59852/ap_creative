@@ -2,6 +2,8 @@
 @import './modules/_Navigation.scss';
 @import './modules/_Home.scss';
 @import './modules/_About.scss';
+@import './modules/_Contact.scss';
+@import './modules/_Queries.scss';
 
 .dark {
     img {
@@ -34,4 +36,17 @@
         background: transparent;
         margin-top: 4px;
     }
+}
+
+#fp-nav ul li a span {
+    transition: background 0.5s ease;
+    background: white;
+}
+
+.test {
+    background: #111111 !important;
+}
+
+.slideLeft {
+    transform: translateX(-100%);
 }
