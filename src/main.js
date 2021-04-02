@@ -24,6 +24,13 @@ Vue.use(VueFullPage);
 Vue.config.productionTip = false;
 
 new Vue({
+  watch: {
+    '$route.path': function(to, from) {
+      let nav = document.querySelector("#topNav")
+      nav.classList.remove("dark");
+    }
+  },
+
   router,
   render: (h) => h(App),
 }).$mount("#app");

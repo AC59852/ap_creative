@@ -1,23 +1,27 @@
 #home {
     #fullpage {
+        #section1, #section2 {
+            padding-top: 0 !important;
+        }
         #section0 {
             background-image: $home-gradient;
         }
 
         #section1 {
-            background: linear-gradient(90deg, #7189C7 0%, rgba(27, 132, 155, 0.74) 100%);
+            background: $proj1-gradient;
+            img {
+                        transform: translateX(5%);
+            }
         }
 
         #section2 {
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: $proj2-gradient;
         }
 
         .section {
-            overflow: hidden;
             h1, h2 {
                 font-family: $heading-font;
                 width: 80%;
-                margin: 15vh 0 8%;
             }
 
             h2, p, a {
@@ -31,7 +35,7 @@
                 font-weight: 800;
                 color: black;
                 margin-bottom: 2%;
-                margin-top: 11vh;
+                margin-top: 3%;
             }
 
             p {
@@ -55,24 +59,29 @@
                 padding: 3.5% 2%;
                 text-decoration: none;
                 border-radius: 5px;
+                border: solid 2px transparent;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    background: none;
+                    border: 2px solid white;
+                }
             }
 
             img {
                 width: 93%;
                 display: flex;
                 object-fit: cover;
-                margin-left: auto;
+                margin: 0 auto;
             }
 
-            .project, .homeTop {
+            .homeTop {
                 width: 95%;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: column;
                 height: 100%;
-            }
 
-            .homeTop {
                 h1 {
                     color: white;
                     font-size: 24px;
@@ -85,7 +94,13 @@
                 img {
                     width: 100%;
                     margin: 0 auto;
-                    transform: translateX(0);
+                }
+            }
+
+            &:not(:first-child) {
+                img {
+                    width: 88%;
+                    margin-top: 8%;
                 }
             }
         }

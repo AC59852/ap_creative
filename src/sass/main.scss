@@ -11,6 +11,8 @@
     }
 }
 
+html{position: relative; height: 100%; overflow: hidden;}
+
 #about, html {
     &::-webkit-scrollbar {
         display: block;
@@ -54,3 +56,8 @@
 .hide {
     display: none !important;
 }
+
+#fp-nav {
+    display: none;
+}
+
