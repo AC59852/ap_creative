@@ -61,14 +61,14 @@ export default {
 
         if(original == 0 || original == 2 && newPlace == 1 || newPlace == 2) {
           nav.classList.add("dark");
-          nav.classList.add("hide")
+          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { console.log("dont fire") } else { nav.classList.add("hide") }
           navAll.forEach(bubble => {
             bubble.classList.add("test");
           })
 
         } else { 
           nav.classList.remove("dark");
-          nav.classList.remove("hide")
+          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { console.log("dont fire") } else { nav.classList.remove("hide") }
           navAll.forEach(bubble => {
             bubble.classList.remove("test");
           })

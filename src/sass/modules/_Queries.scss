@@ -1,7 +1,7 @@
 @media screen and (min-width: 359px) {
     header {
         #topNav {
-            padding: 10px 15px;
+            padding: 20px 15px;
 
             img {
                 width: 35px;
@@ -70,7 +70,7 @@
         .aboutWrapper {
             .aboutNames {
                 font-size: 28px;
-                margin: 2% 0 12%;
+                margin: 9% 0 15%;
             }
 
             .aboutContent {
@@ -86,7 +86,24 @@
                 p {
                    font-size: 18px;
                    line-height: 23.5px;
-                   width: 100%; 
+                   width: 313px; 
+                }
+
+                .icons {
+                    display: flex;
+                    width: 85px;
+                    margin-left: 4.5%;
+                    margin-top: 7%;
+
+                    a:nth-child(1) {
+                        margin-right: 12px;
+                    }
+
+                    a {
+                        svg {
+                            font-size: 28px;
+                        }
+                    }
                 }
             }
         }
@@ -108,10 +125,10 @@
             .section {
                 .homeTop {
                     h1 {
-                        margin-top: 10%;
+                        margin-top: 15%;
                     }
                     img {
-                        margin-top: 10%;
+                        margin-top: 15%;
                     }
                 }
                 .project {
@@ -138,9 +155,9 @@
             .section {
                 .homeTop {
                     h1 {
-                        font-size: 33px;
-                        line-height: 44px;
-                        width: 95%;
+                        font-size: 32px;
+                        line-height: 46px;
+                        width: 80%;
                     }
                 }
 
@@ -174,12 +191,6 @@
     #home {
         #fullpage {
             .section {
-                .homeTop {
-                    h1 {
-                        font-size: 38px;
-                        line-height: 50px;
-                    }
-                }
                 h2 {
                     font-size: 52px;
                     line-height: 64px;
