@@ -10,7 +10,7 @@
           </ul>
         <div class="iconCon">
           <router-link to="/"><img src="img/svgs/AP_logo_dark.svg" alt="logo"></router-link>
-          <img @click="showMenu()" src="img/svgs/search.svg" alt="search icon">
+          <img @click="showMenu()" src="img/svgs/info.svg" alt="search icon">
       </div>
       </nav>
   </header>

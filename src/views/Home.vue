@@ -4,15 +4,19 @@
       <div class="section" id="section0">
         <div class="homeTop">
           <h1>Austin Caron and Patrick Bradley Collaborative Portfolio.</h1>
-          <img srcset="img/noshadow_mock.png 1279w, img/home_mockup.png 1280w" alt="image of phones">
+          <img srcset="img/noshadow_mock.png" alt="image of phones">
         </div>
       </div>
       <div class="section" v-for="project in projects" :key="project.id" :id="'section' + project.id">
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.desc }}</p>
-            <router-link to="/">View Website</router-link>
-            <img :src="'img/' + project.image" :alt="'image of ' + project.title">
-          </div>
+            <div class="sectionContent">
+              <div class="sectionText">
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.desc }}</p>
+                <router-link to="/">View Website</router-link>
+              </div>
+              <img :src="'img/' + project.image" :alt="'image of ' + project.title">
+            </div>
+      </div>
     </full-page>
   </section>
 </template>
@@ -56,19 +60,24 @@ export default {
       let original = origin.index,
           newPlace = destination.index,
           nav = document.querySelector("#topNav"),
+          header = document.querySelector("header"),
           navAll = document.querySelectorAll("#fp-nav ul li a span");
 
 
         if(original == 0 || original == 2 && newPlace == 1 || newPlace == 2) {
           nav.classList.add("dark");
-          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { console.log("dont fire") } else { nav.classList.add("hide") }
+          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { return } 
+          else if (window.innerWidth <= 767){ header.classList.add("hide") }
+
           navAll.forEach(bubble => {
             bubble.classList.add("test");
           })
 
         } else { 
           nav.classList.remove("dark");
-          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { console.log("dont fire") } else { nav.classList.remove("hide") }
+          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { return } 
+          else if (window.innerWidth <= 767){ header.classList.remove("hide") }
+          
           navAll.forEach(bubble => {
             bubble.classList.remove("test");
           })
