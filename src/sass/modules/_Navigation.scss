@@ -7,7 +7,7 @@ header {
     #topNav {
         display: flex;
         justify-content: space-between;
-        padding: 6px 15px;
+        padding: 12px 15px;
         z-index: 9999;
 
         img {
@@ -58,7 +58,7 @@ header {
                     font-size: 28px;
                     text-decoration: none;
                     opacity: 0.5;
-                    transition: opacity 0.4s ease;
+                    transition: opacity 0.4s ease, color 0.7s ease;
                     text-transform: uppercase;
                     &:hover {
                         opacity: 1;

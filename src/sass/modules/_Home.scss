@@ -28,43 +28,47 @@
                 margin-left: 5%;
             }
 
-            h2 {
-                font-size: 38px;
-                line-height: 48px;
-                text-transform: uppercase;
-                font-weight: 800;
-                color: black;
-                margin-bottom: 2%;
-                margin-top: 3%;
-            }
-
-            p {
-                font-family: $body-font;
-                width: 85%;
-                letter-spacing: 0.2px;
-                line-height: 20px;
-                font-size: 16px;
-                font-weight: 600;
-            }
-
-            a {
-                font-family: $body-font;
-                font-size: 15px;
-                display: flex;
-                justify-content: center;
-                width: 35%;
-                background-color: black;
-                color: white;
-                margin: 5% 0 3% 5%;
-                padding: 3.5% 2%;
-                text-decoration: none;
-                border-radius: 5px;
-                border: solid 2px transparent;
-                transition: all 0.4s ease;
-
-                &:hover {
-                    background: none;
-                    border: 2px solid white;
+            .sectionContent {
+                .sectionText {
+                    h2 {
+                        font-size: 38px;
+                        line-height: 48px;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        color: black;
+                        margin-bottom: 2%;
+                        margin-top: 3%;
+                    }
+        
+                    p {
+                        font-family: $body-font;
+                        width: 85%;
+                        letter-spacing: 0.2px;
+                        line-height: 20px;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+        
+                    a {
+                        font-family: $body-font;
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: center;
+                        width: 35%;
+                        background-color: black;
+                        color: white;
+                        margin: 5% 0 3% 5%;
+                        padding: 3.5% 2%;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        border: solid 2px transparent;
+                        transition: all 0.4s ease;
+        
+                        &:hover {
+                            background: none;
+                            border: 2px solid white;
+                        }
+                    }
                 }
             }
 
