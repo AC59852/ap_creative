@@ -409,7 +409,7 @@
 
                         h2 {
                             letter-spacing: 0.6px;
-                            width: 100%;
+                            width: 548px;
                             font-size: 50px;
                             line-height: 64px;
                             text-transform: capitalize;
@@ -433,7 +433,7 @@
     }
 }
 
-@media (min-width: 1024px) and (min-height: 1300px) {
+@media (min-width: 1024px) and (min-height: 1280px) {
     #home {
         #fullpage {
             .section {
@@ -481,6 +481,50 @@
 }
 
 @media screen and (min-width: 1200px) {
+    header {
+        #topNav {
+            padding: 30px 50px 0;
+
+            div {
+                a:nth-child(1) {
+                    margin: 0;
+                }
+
+                img:nth-child(2) {
+                    display: none;
+                }
+            }
+
+            img:nth-child(3) {
+                display: none;
+            }
+
+            ul {
+                width: 380px;
+                top: 6%;
+                right: 20px;
+                justify-content: space-evenly;
+                height: auto;
+                left: auto;
+                opacity: 1;
+                align-items: inherit;
+                flex-direction: row;
+                background: transparent;
+                z-index: 99999;
+
+                li {
+                   margin: 0;
+                   line-height: normal;
+
+                   a {
+                       font-size: 20px;
+                   }
+                }
+            }
+        }
+    }
+
+
     #home {
         #fullpage {
             #section0 {
@@ -488,6 +532,53 @@
             }
             #section1 {
                 background: linear-gradient(1deg, #7189C7 0%, rgba(27, 132, 155, 0.74) 100%);
+            }
+
+            .section {
+                .homeTop {
+                    width: 1070px;
+                    
+                    h1 {
+                        font-size: 60px;
+                        line-height: 76px;
+                    }
+    
+                    img {
+                       width: 490px; 
+                    }
+                }
+
+                h2, p {
+                    margin-left: 0;
+                }
+
+                .sectionContent {
+                    width: 1070px;
+
+                    .sectionText {
+                        h2 {
+                            font-size: 56px;
+                            line-height: 64px;
+                            letter-spacing: 0.8px;
+                            margin-bottom: 6%;
+                        }
+
+                        p {
+                            width: 480px;
+                            font-size: 24px;
+                            line-height: 34px;
+                        }
+
+                        a {
+                            margin-left: 0;
+                        }
+                    }
+
+                    img {
+                        margin-top: 13%;
+                        width: 522px;
+                    }
+                }
             }
         }
     }

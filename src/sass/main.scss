@@ -10,6 +10,14 @@
     img {
         filter: brightness(0) !important;
     }
+
+    ul {
+        li {
+            a {
+                color: black !important;
+            }
+        }
+    }
 }
 
 html{position: relative; height: 100%; overflow: hidden;}
