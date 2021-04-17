@@ -57,10 +57,12 @@
             }
 
             .icons {
-                svg {
-                    color: white;
-                    font-size: 25px;
-                    margin: 6% 4% 10% 0;
+                a {
+                    svg {
+                        color: white;
+                        font-size: 25px;
+                        margin: 6% 4% 10% 0;
+                    }
                 }
             }
         }

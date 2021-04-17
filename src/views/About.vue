@@ -28,6 +28,7 @@ export default {
 
         {id: 1, name: 'Austin', title: 'Front-End Web Designer and Developer', img: 'placeholder.png', desc: 'London, Ontario based UX/UI Designer and Social Media Strategist that focuses on simplifying modern interfaces to produce unqiue, engaging user experiences for responsive websites and mobile applications.', socials: [ {icon: 'linkedin'}, {icon: 'instagram'} ]}
       ],
+      
       currentPerson: {}
     }
   },

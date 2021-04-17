@@ -8,15 +8,11 @@
         </div>
       </div>
       <div class="section" v-for="project in projects" :key="project.id" :id="'section' + project.id">
-        <div :class="project.class">
-          <div>
             <h2>{{ project.title }}</h2>
             <p>{{ project.desc }}</p>
             <router-link to="/">View Website</router-link>
+            <img :src="'img/' + project.image" :alt="'image of ' + project.title">
           </div>
-          <img :src="'img/' + project.image" :alt="'image of ' + project.title">
-        </div>
-      </div>
     </full-page>
   </section>
 </template>
@@ -30,32 +26,56 @@ export default {
     return {
       options: {
         onLeave: this.onLeave,
-        normalScrollElements: '#topNav',
+        normalScrollElements: '#topNav, #popup, #popup .popupWrapper',
         navigation: true,
 	      navigationPosition: 'right',
+        paddingTop: '5em',
+        fitToSection: true,
+        bigSectionsDestination: 'top',
       },
 
       projects: [
-        {id: 1, class: "project", title: "Spotify Redesign", desc: `creating a connection between the user's music-interests and the content being displayed.`, image: 'themockup.png'},
-        {id: 2, class: "project", title: "October's Very Own", desc: `creating a connection between the user's music-interests and the content being displayed`, image: 'Mockup.png'},
+        {id: 1, class: "project", title: "Spotify Redesign", desc: `creating a connection between the user's music-interests and the content displayed.`, image: 'themockup.png'},
+        {id: 2, class: "project", title: "October's Very Own", desc: `a brand consistent mobile redesign for rapper, singer, song-writer, Drake's official clothing website.`, image: 'Mockup.png'},
       ]
     }
   },
 
+  mounted() {
+    let nav = document.querySelector("#topNav"),
+      navAll = document.querySelectorAll("#fp-nav ul li a span");
+    nav.classList.remove("dark");
+          navAll.forEach(bubble => {
+            bubble.classList.remove("test");
+        })
+  },
+
   methods: {
     onLeave(origin, destination) {
-        if(origin.index == 0 || origin.index == 2 && destination.index == 1) {
-          document.querySelector("#topNav").classList.add("dark");
-          document.querySelectorAll("#fp-nav ul li a span").forEach(bubble => {
+
+      let original = origin.index,
+          newPlace = destination.index,
+          nav = document.querySelector("#topNav"),
+          navAll = document.querySelectorAll("#fp-nav ul li a span");
+
+
+        if(original == 0 || original == 2 && newPlace == 1 || newPlace == 2) {
+          nav.classList.add("dark");
+          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { console.log("dont fire") } else { nav.classList.add("hide") }
+          navAll.forEach(bubble => {
             bubble.classList.add("test");
           })
+
         } else { 
-          document.querySelector("#topNav").classList.remove("dark");
-          document.querySelectorAll("#fp-nav ul li a span").forEach(bubble => {
+          nav.classList.remove("dark");
+          if(window.matchMedia('(display-mode: standalone)').matches && window.innerWidth <= 500) { console.log("dont fire") } else { nav.classList.remove("hide") }
+          navAll.forEach(bubble => {
             bubble.classList.remove("test");
           })
-          }
-    }
+
+        }
+    },
+
   },
 
   components: {

@@ -22,7 +22,7 @@
             </span>
         </div>
     </form>
-    <div :class="{sent: emailSent}">
+    <div :class="{sent: emailSent}" class="sentMsg">
         <p>{{ sent_message }}</p>
         <router-link to="/">Back</router-link>
     </div>
@@ -54,6 +54,10 @@ export default {
                     message: this.message,
                     from_name: this.from_name
                 }, this.emailSent = true)
+
+                document.querySelector(".contTitle").classList.add("hide");
+                document.querySelector(".contTag").classList.add("hide");
+                document.querySelector("form").classList.add("hide");
             } catch(err) {
                 console.log(err)
             } this.name = '', this.email = '', this.message = '';
