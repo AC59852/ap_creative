@@ -1,0 +1,105 @@
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.795);
+    overflow-y: scroll;
+    padding-bottom: 5%;
+    .popupWrapper {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        background: $pop-gradient;
+        color: white;
+        font-family: $body-font;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        border-radius: 3px;
+
+        .popBtns div, .popClose {
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        p, ul, ul li {
+            width: 90%;
+            margin: 6% auto;
+        }
+
+        p {
+            &:nth-child(1) {
+                margin-top: 7%;
+                margin-top: 10%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            height: 190px;
+
+            li {
+                margin: 4% auto;
+
+                &::before {
+                    content: "\2022";
+                    color: white;
+                    font-weight: bold;
+                    width: 1em;
+                    margin-left: -1em;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .popBtns {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 8% 0;
+            div {
+                width: 33%;
+                margin: 0 auto;
+                background-color: transparent;
+                border: solid 2px white;
+                text-align: center;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 2px;
+            }
+        }
+
+        .popClose {
+            width: 50%;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 14px;
+            border: solid 2px white;
+            background: transparent;
+            color: white;
+            border-radius: 3px;
+            margin: 5% auto 15%;
+            font-family: $heading-font;
+        }
+    }
+}
+
+.btnActive {
+    background-color: white !important;
+    border: 2px solid transparent !important;
+    color: black !important;
+    font-weight: 700;
+}
+
+.popupShow {
+    display: flex !important;
+}

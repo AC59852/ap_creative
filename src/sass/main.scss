@@ -1,5 +1,6 @@
 @import './modules/_Vars.scss';
 @import './modules/_Navigation.scss';
+@import './modules/_PopUp.scss';
 @import './modules/_Home.scss';
 @import './modules/_About.scss';
 @import './modules/_Contact.scss';
@@ -13,7 +14,7 @@
 
 html{position: relative; height: 100%; overflow: hidden;}
 
-#about, html {
+#about, html, #popup div {
     &::-webkit-scrollbar {
         display: block;
         width: 6px;

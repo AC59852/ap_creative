@@ -5,8 +5,8 @@ module.exports = {
     },
     pwa: {
         name: "AP Creative",
-        themeColor: "#11111",
-        msTileColor: "#11111",
+        themeColor: "#111111",
+        msTileColor: "#111111",
         appleMobileWebAppCapable: "yes",
         appleMobileWebAppStatusBarStyle: "black",
         assetsVersion: "1.2",

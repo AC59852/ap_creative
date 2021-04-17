@@ -26,7 +26,7 @@ export default {
     return {
       options: {
         onLeave: this.onLeave,
-        normalScrollElements: '#topNav',
+        normalScrollElements: '#topNav, #popup, #popup .popupWrapper',
         navigation: true,
 	      navigationPosition: 'right',
         paddingTop: '5em',
