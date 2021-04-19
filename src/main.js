@@ -3,21 +3,29 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import VueFullPage from "vue-fullpage.js";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFacebook, faInstagram, faLinkedin, faReddit, faSpotify, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faReddit,
+  faSpotify,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(
-  faLinkedin, 
-  faInstagram, 
-  faFacebook, 
-  faYoutube, 
-  faSpotify, 
-  faTwitter, 
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+  faYoutube,
+  faSpotify,
+  faTwitter,
   faReddit
-  )
+);
 
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(VueFullPage);
 
@@ -25,10 +33,10 @@ Vue.config.productionTip = false;
 
 new Vue({
   watch: {
-    '$route.path': function(to, from) {
-      let nav = document.querySelector("#topNav")
+    "$route.path": function () {
+      let nav = document.querySelector("#topNav");
       nav.classList.remove("dark");
-    }
+    },
   },
 
   router,

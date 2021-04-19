@@ -152,7 +152,7 @@
                     h1 {
                         font-size: 32px;
                         line-height: 46px;
-                        width: 80%;
+                        width: 307px;
                     }
                 }
 
@@ -215,6 +215,12 @@
             }
         }
     }
+
+    #contact {
+        h1 {
+            margin-top: 0;
+        }
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -268,6 +274,7 @@
                         margin: -5% 0 0 0;
                         font-size: 52px;
                         line-height: 66px;
+                        width: 496px;
                     }
 
                     img {
@@ -433,53 +440,6 @@
     }
 }
 
-@media (min-width: 1024px) and (min-height: 1280px) {
-    #home {
-        #fullpage {
-            .section {
-                .homeTop {
-                    flex-direction: column;
-
-                    h1 {
-                        font-size: 58px;
-                        line-height: 79px;
-                    }
-
-                    img {
-                        width: 600px;
-                        margin-top: 5%;
-                    }
-                }
-
-                .sectionContent {
-                    flex-direction: column;
-                    align-items: flex-start;
-
-                    .sectionText {
-                        margin-top: 0;
-                        width: auto;
-
-                        h2 {
-                            width: 727px;
-                            font-size: 66px;
-                            line-height: 64px;
-                        }
-
-                        p {
-                           width: 492px; 
-                        }
-                    }
-
-                    img {
-                        margin-top: 10%;
-                        width: 632px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media screen and (min-width: 1200px) {
     header {
         #topNav {
@@ -541,6 +501,7 @@
                     h1 {
                         font-size: 60px;
                         line-height: 76px;
+                        width: 577px;
                     }
     
                     img {
@@ -577,6 +538,25 @@
                     img {
                         margin-top: 13%;
                         width: 522px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #home {
+        #fullpage {
+            .section {
+                .homeTop {
+                    width: 1160px;
+                }
+
+                .sectionContent {
+                    width: 1160px;
+                    img {
+                        width: 590px;
                     }
                 }
             }
