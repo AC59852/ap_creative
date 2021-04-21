@@ -223,7 +223,36 @@
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 550px) {
+    #about .aboutWrapper {
+        .aboutNames {
+            width: 460px;
+            font-size: 34px;
+            margin: 4% auto 13%;
+        }
+
+        .aboutContent {
+            h3 {
+                width: 400px;
+                margin: 0 auto;
+                font-size: 36px;
+                line-height: 46px;
+            }
+
+            img {
+                width: 290px;
+            }
+
+            p {
+                font-size: 23px;
+                line-height: 28.5px;
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
     #fp-nav {
         display: block !important;
     }
@@ -309,8 +338,49 @@
                 }
             }
         }
-    }        
+    }
 
+    #about {
+        .aboutWrapper {
+            margin-bottom: 4%;
+
+            .aboutNames {
+                width: 460px;
+                margin: 0 auto 8%;
+            }
+
+            .aboutContent {
+                h3 {
+                    width: 440px;
+                }
+
+                img {
+                    margin: 6% auto;
+                }
+
+                p {
+                    width: 440px;
+                }
+
+                .icons {
+                    margin-left: 16.5%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #about {
+        .aboutWrapper {
+            .aboutContent {
+                .icons { margin-left: 18.5%; }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 966px) {
     #about {
         background: linear-gradient(1deg, #0A0909 0%, rgb(26, 26, 26) 91.67%);
         .aboutWrapper {
@@ -364,6 +434,8 @@
 
                 .icons {
                     display: flex;
+                    margin-left: 0;
+                    margin-top: 3%;
 
                     a {
                         margin-right: 1%;
@@ -543,6 +615,60 @@
             }
         }
     }
+
+    #about {
+        .aboutWrapper {
+            .aboutNames {
+                font-size: 32px;
+                line-height: 50px;
+            }
+
+            .aboutContent {
+                width: 1070px;
+                margin-top: 7%;
+
+                h3 {
+                    font-size: 60px;
+                    line-height: 67px;
+                    width: auto;
+                }
+
+                img {
+                    top: 59%;
+                    width: 376px;
+                }
+
+                p {
+                    width: 556px;
+                    font-size: 30px;
+                    line-height: 47.6px;
+                }
+
+                .icons {
+                    margin-left: 0;
+                    margin-top: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #about {
+        .aboutWrapper {
+            .aboutContent {
+                img {
+                    top: 68%;
+                    width: 361px;
+                }
+                
+                p {
+                    font-size: 26px;
+                    line-height: 41px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -559,6 +685,39 @@
                         width: 590px;
                     }
                 }
+            }
+        }
+    }
+
+    #about {
+        .aboutWrapper {
+            .aboutContent {
+                margin-top: 7%;
+                h3 {
+                    margin-top: -10%;
+                }
+
+                p {
+                    width: 562px;
+                    font-size: 26px;
+                    line-height: 36px;
+                    padding-top: 3%;
+                }
+
+                img { 
+                    width: 340px;
+                    right: 22%; 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1870px) {
+    #about {
+        .aboutWrapper {
+            .aboutContent {
+                img { right: 25%; }
             }
         }
     }
