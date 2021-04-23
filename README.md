@@ -28,6 +28,7 @@ npm run serve
 
 ## Built With
 
+<p align="center">
 <table>
   <tr>
   <td align="center" width="96">
@@ -52,6 +53,7 @@ npm run serve
     </td>
   </tr>
 </table>
+</p>
 
 
 
