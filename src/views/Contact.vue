@@ -13,7 +13,7 @@ export default {
     return {
       title: "Need a website? Have a job opportunity? Just want to talk?",
       tagline: "Get in touch with us.",
-      sent_message: `Thanks for reaching out! We'll respond to your message as soon as we can`,
+      sent_message: `Thanks for reaching out! We'll respond to your message as soon as we can.`,
     };
   },
 

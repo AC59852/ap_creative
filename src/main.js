@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
+import VueMeta from "vue-meta";
 import VueFullPage from "vue-fullpage.js";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -24,6 +25,8 @@ library.add(
   faTwitter,
   faReddit
 );
+
+Vue.use(VueMeta);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
