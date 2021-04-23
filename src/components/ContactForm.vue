@@ -56,7 +56,7 @@
       </div>
     </form>
     <div :class="{ sent: emailSent }" class="sentMsg">
-      <p>{{ sent_message }}</p>
+      <p v-if="emailSent">{{ sent_message }}</p>
       <router-link to="/">Back</router-link>
     </div>
   </div>
