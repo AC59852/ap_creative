@@ -1,13 +1,13 @@
 <template>
   <aside>
     <div class="popupWrapper">
+      <h2>Notice:</h2>
+      <img src="img/svgs/airplay.svg" alt="">
       <p>
-        We noticed that you're using a mobile browser (such as Safari or Chrome)
-        to load this application.
+        Although the AP Creative website is responsive, for the best experience on mobile, we recommend downloading the AP Creative app.
       </p>
-      <p>We recommend downloading the app for the best experience</p>
-      <p>Tap whichever browser you're using to view this site for help.</p>
       <div>
+        <h3>Please Select Your Current Browser:</h3>
         <div class="popBtns">
           <div
             @click="
@@ -30,11 +30,8 @@
         </div>
       </div>
       <div>
-        <p>
-          Otherwise, Just tap the button below to continue to the website,
-          enjoy!
-        </p>
-        <div class="popClose" @click="hidePopup()">View Site</div>
+        <h3>Continue Without Downloading:</h3>
+        <div class="popClose" @click="hidePopup()">Continue to Site</div>
       </div>
     </div>
   </aside>
@@ -44,8 +41,10 @@
 export default {
   data() {
     return {
+      // activeBrowser is set to 0, since that's the id of the first browser in the "browsers" data array
       activeBrowser: 0,
 
+      // Data array of browsers
       browsers: [
         {
           id: 1,
@@ -88,29 +87,31 @@ export default {
         },
       ],
 
+      // currentBrowser contains the data of the browser that was clicked
       currentBrowser: {},
     };
   },
 
   mounted() {
+    // When the vue model is mounted, set the current browser as the first in the "browsers" data array
     this.currentBrowser = this.browsers[0];
   },
 
   methods: {
+    // Set the current browser as the browser that was clicked
     setCurrentBrowser(info) {
       this.currentBrowser = info;
     },
 
+    // Set the active browser as the browser that was clicked
     setActive(index) {
       this.activeBrowser = index;
     },
 
     hidePopup() {
+      // On click of the close button, hide the popup
       document.getElementById("popup").classList.toggle("popupShow");
-
-      document.querySelector("#fullpage").style.transform =
-        "translate3d(0px, 0px, 0px)";
-
+      
       document.querySelector("#topNav").classList.remove("hide");
       document.querySelector("#topNav").classList.remove("dark");
     },

@@ -7,19 +7,20 @@
     />
     <p>{{ currentPerson.desc }}</p>
     <div class="icons">
-      <router-link
+      <a
         v-for="social in currentPerson.socials"
         :key="social.icon"
-        to="/"
+        :href="social.link"
         target="_blank"
         ><font-awesome-icon :icon="['fab', social.icon]"
-      /></router-link>
+      /></a>
     </div>
   </section>
 </template>
 
 <script>
 export default {
+  // Define the prop being carried over from a different component/vue
   props: ["currentPerson"],
 };
 </script>

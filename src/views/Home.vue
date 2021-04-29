@@ -17,11 +17,13 @@
           <div class="sectionText">
             <h2>{{ project.title }}</h2>
             <p>{{ project.desc }}</p>
-            <router-link to="/">View Website</router-link>
+            <a :href="project.link" target="_blank" rel="noopener"
+              >View Website</a
+            >
           </div>
           <img
             :src="'img/' + project.image"
-            :alt="'image of ' + project.title"
+            :alt="'Preview image for ' + project.title"
           />
         </div>
       </div>
@@ -34,6 +36,21 @@
 
 export default {
   name: "Home",
+
+  metaInfo() {
+    return {
+      title: this.meta.page,
+      titleTemplate: "AP Creative  - %s",
+
+      meta: [
+        {
+          name: "description",
+          content: "This is a test description for home page",
+        },
+      ],
+    };
+  },
+
   data() {
     return {
       options: {
@@ -46,6 +63,10 @@ export default {
         bigSectionsDestination: "top",
       },
 
+      meta: {
+        page: "Home",
+      },
+
       projects: [
         {
           id: 1,
@@ -53,13 +74,23 @@ export default {
           title: "Spotify Redesign",
           desc: `creating a connection between the user's music-interests and the content displayed.`,
           image: "themockup.png",
+          link: "https://invis.io/U510TOGWVRTN#/450437298_Home",
         },
         {
           id: 2,
           class: "project",
           title: "October's Very Own",
-          desc: `a brand consistent mobile redesign for rapper, singer, song-writer, Drake's official clothing website.`,
+          desc: `A brand consistent mobile redesign for rapper, singer, song-writer, Drake's official clothing website.`,
           image: "ovo.png",
+          link: "https://ovo-redesign.web.app/",
+        },
+        {
+          id: 3,
+          class: "project",
+          title: "Nintendo Fan Redesign",
+          desc: `A fully modern desktop update of Nintendo's official website, focusing on user experience and brand consistency.`,
+          image: "nintendo.png",
+          link: "https://nintendo-app.web.app/",
         },
       ],
     };
@@ -83,7 +114,7 @@ export default {
         projTitle = document.querySelectorAll(".sectionText h2"),
         navAll = document.querySelectorAll("#fp-nav ul li a span");
 
-      if (original == 0 || (original == 2 && newPlace == 1) || newPlace == 2) {
+      if (original == 0 || (original == 2 && newPlace == 1) || newPlace == 2 || newPlace == 3) {
         nav.classList.add("dark");
         if (
           window.matchMedia("(display-mode: standalone)").matches &&

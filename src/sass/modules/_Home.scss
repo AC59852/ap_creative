@@ -1,6 +1,6 @@
 #home {
     #fullpage {
-        #section1, #section2 {
+        #section1, #section2, #section3, #section4 {
             padding-top: 0 !important;
         }
         #section0 {
@@ -16,6 +16,10 @@
 
         #section2 {
             background: $proj2-gradient;
+        }
+
+        #section3 {
+            background: $proj3-gradient;
         }
 
         .section {
