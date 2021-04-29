@@ -5,7 +5,7 @@
         <router-link to="/"
           ><img src="img/svgs/AP_logo_dark.svg" alt="logo"
         /></router-link>
-        <img @click="showMenu()" src="img/svgs/info.svg" alt="search icon" />
+        <img @click="showPopup()" class="popToggle" src="img/svgs/info.svg" alt="Mobile App Download Popup" />
       </div>
       <ul>
         <span @click="showMenu()">X</span>
@@ -29,12 +29,17 @@
 <script>
 export default {
   methods: {
+    // Toggle the nav menu
     showMenu() {
       document.querySelector("#topNav ul").classList.toggle("show");
       if (document.querySelector("body").classList.contains("fp-viewing-1")) {
         document.querySelector("#topNav").classList.toggle("dark");
       }
     },
+
+    showPopup() {
+      document.querySelector("#popup").classList.toggle("popupShow")
+    }
   },
 };
 </script>

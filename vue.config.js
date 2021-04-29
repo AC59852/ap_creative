@@ -1,7 +1,15 @@
 require = require("esm")(module);
 
 module.exports = {
-  pluginOptions: {},
+  pluginOptions: {
+    sitemap: {
+      urls: [
+        'https://apcreative-5c001.web.app/',
+        'https://apcreative-5c001.web.app/about',
+        'https://apcreative-5c001.web.app/contact'
+      ]
+    }
+  },
   pwa: {
     name: "AP Creative",
     themeColor: "#111111",
@@ -15,6 +23,10 @@ module.exports = {
       appleTouchIcon: "img/icons/apple-touch-icon.png",
       maskIcon: "img/icons/safari-pinned-tab.svg",
       msTileImage: "img/icons/mstile-150x150.png",
+    },
+    workboxOptions: {
+      skipWaiting: true,
+      clientsClaim: true,
     },
     manifestOptions: {
       icons: [

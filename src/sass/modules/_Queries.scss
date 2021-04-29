@@ -99,7 +99,7 @@
                     margin-left: 4.5%;
                     margin-top: 7%;
 
-                    a:nth-child(1) {
+                    a {
                         margin-right: 12px;
                     }
 
@@ -117,7 +117,7 @@
 @media (min-width: 320px) and (min-height: 740px) {
     #home {
         #fullpage {
-            #section1, #section2 {
+            #section1, #section2, #section3, #section4 {
                 padding-top: 0 !important;
             }
     
@@ -141,9 +141,16 @@
 }
 
 @media screen and (min-width: 374px) {
+    #popup {
+        .popupWrapper {
+            p {
+                width: 350px;
+            }
+        }
+    }
     #home {
         #fullpage {
-            #section1, #section2 {
+            #section1, #section2, #section3, #section4 {
                 padding-top: 0 !important;
             }
     
@@ -253,6 +260,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    #popup {
+        display: none !important;
+    }
+    
     #fp-nav {
         display: block !important;
     }
@@ -494,8 +505,6 @@
                     margin-top: 3%;
 
                     a {
-                        margin-right: 1%;
-
                         svg {
                             font-size: 30px;
                             margin: 0;
@@ -683,6 +692,12 @@
             }
             #section1 {
                 background: linear-gradient(1deg, #7189C7 0%, rgba(27, 132, 155, 0.74) 100%);
+            }
+            #section2 {
+                background: linear-gradient(1deg, #F0D07B 0%, #E4BA49 92.19%);
+            }
+            #section3 {
+                background: linear-gradient(180deg, #FF7676 0%, #F65656 92.19%);
             }
 
             .section {
