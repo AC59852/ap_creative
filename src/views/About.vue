@@ -62,7 +62,7 @@ export default {
           title: "Front-End Web Designer and Developer",
           image: "austin.png",
           desc:
-            "London, Ontario based UX/UI Designer and Social Media Strategist that focuses on simplifying modern interfaces to produce unqiue, engaging user experiences for responsive websites and mobile applications.",
+            "Front-End Designer/Developer from Chatham, Ontario. Constantly learning new tech, with a clear understanding of JavaScript, JS/Design Frameworks, CMS Systems, Data, and more.",
           socials: [
             { icon: "github", link: "https://github.com/AC59852" },
             {
