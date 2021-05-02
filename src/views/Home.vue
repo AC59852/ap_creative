@@ -114,7 +114,7 @@ export default {
         projTitle = document.querySelectorAll(".sectionText h2"),
         navAll = document.querySelectorAll("#fp-nav ul li a span");
 
-      if (original == 0 || (original == 2 && newPlace == 1 || newPlace == 2 || newPlace == 3)) {
+      if (original == 0 || newPlace >= 1) {
         nav.classList.add("dark");
         if (
           window.matchMedia("(display-mode: standalone)").matches &&

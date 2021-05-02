@@ -4,11 +4,11 @@ module.exports = {
   pluginOptions: {
     sitemap: {
       urls: [
-        'https://apcreative-5c001.web.app/',
-        'https://apcreative-5c001.web.app/about',
-        'https://apcreative-5c001.web.app/contact'
-      ]
-    }
+        "https://apcreative-5c001.web.app/",
+        "https://apcreative-5c001.web.app/about",
+        "https://apcreative-5c001.web.app/contact",
+      ],
+    },
   },
   pwa: {
     name: "AP Creative",

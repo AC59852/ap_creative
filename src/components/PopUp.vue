@@ -2,9 +2,10 @@
   <aside>
     <div class="popupWrapper">
       <h2>Notice:</h2>
-      <img src="img/svgs/airplay.svg" alt="">
+      <img src="img/svgs/airplay.svg" alt="" />
       <p>
-        Although the AP Creative website is responsive, for the best experience on mobile, we recommend downloading the AP Creative app.
+        Although the AP Creative website is responsive, for the best experience
+        on mobile, we recommend downloading the AP Creative app.
       </p>
       <div>
         <h3>Please Select Your Current Browser:</h3>
@@ -111,7 +112,7 @@ export default {
     hidePopup() {
       // On click of the close button, hide the popup
       document.getElementById("popup").classList.toggle("popupShow");
-      
+
       document.querySelector("#topNav").classList.remove("hide");
       document.querySelector("#topNav").classList.remove("dark");
     },

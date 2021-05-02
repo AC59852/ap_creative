@@ -21,12 +21,12 @@ if (process.env.NODE_ENV === "production") {
     },
     updated() {
       console.log("New content is available; please refresh.");
-      document.querySelector("#refresh").classList.add("showRefresh")
+      document.querySelector("#refresh").classList.add("showRefresh");
 
       if (window.innerWidth <= 767) {
-        document.querySelector("#refresh").classList.add("anim1")
+        document.querySelector("#refresh").classList.add("anim1");
       } else if (window.innerWidth >= 767) {
-        document.querySelector("#refresh").classList.add("anim2")
+        document.querySelector("#refresh").classList.add("anim2");
       }
       setTimeout(() => {
         window.location.reload();

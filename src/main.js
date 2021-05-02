@@ -30,7 +30,7 @@ library.add(
   faTwitter,
   faReddit,
   faDribbble,
-  faGithub,
+  faGithub
 );
 
 // Register the imports for use

@@ -664,6 +664,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .dark {
+        ul {
+            li {
+                a {color: black !important;}
+            }
+        }
+    }
     header {
         #topNav {
             padding: 30px 50px 0;

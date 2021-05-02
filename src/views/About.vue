@@ -43,7 +43,17 @@ export default {
           image: "patrick.png",
           desc:
             "London, Ontario based UX/UI Designer and Social Media Strategist that focuses on simplifying modern interfaces to produce unqiue, engaging user experiences for responsive websites and mobile applications.",
-          socials: [{ icon: "instagram", link: 'https://www.instagram.com/oattyonfilm/' }, { icon: "linkedin", link: 'https://www.linkedin.com/in/w-patrick-bradley/' }, { icon: "dribbble", link: 'https://dribbble.com/Oatrick' }],
+          socials: [
+            {
+              icon: "instagram",
+              link: "https://www.instagram.com/oattyonfilm/",
+            },
+            {
+              icon: "linkedin",
+              link: "https://www.linkedin.com/in/w-patrick-bradley/",
+            },
+            { icon: "dribbble", link: "https://dribbble.com/Oatrick" },
+          ],
         },
 
         {
@@ -53,7 +63,18 @@ export default {
           image: "austin.png",
           desc:
             "London, Ontario based UX/UI Designer and Social Media Strategist that focuses on simplifying modern interfaces to produce unqiue, engaging user experiences for responsive websites and mobile applications.",
-          socials: [{ icon: "github", link: 'https://github.com/AC59852' }, { icon: "linkedin", link: 'https://www.linkedin.com/in/austincaron/' }, { icon: "spotify", link: 'https://open.spotify.com/show/6h1nZhBfx39xc4QyJ4JvE4?si=Jw9L-TmdTbiS_bTAGodEsA' }],
+          socials: [
+            { icon: "github", link: "https://github.com/AC59852" },
+            {
+              icon: "linkedin",
+              link: "https://www.linkedin.com/in/austincaron/",
+            },
+            {
+              icon: "spotify",
+              link:
+                "https://open.spotify.com/show/6h1nZhBfx39xc4QyJ4JvE4?si=Jw9L-TmdTbiS_bTAGodEsA",
+            },
+          ],
         },
       ],
 

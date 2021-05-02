@@ -2,7 +2,7 @@
   <div id="app">
     <Navigation />
     <PopUp id="popup" />
-    <Refresh id="refresh"/>
+    <Refresh id="refresh" />
     <router-view />
   </div>
 </template>
@@ -11,7 +11,7 @@
 // Imports first
 import Navigation from "@/components/Navigation.vue";
 import PopUp from "@/components/PopUp.vue";
-import Refresh from "@/components/Refresh.vue"
+import Refresh from "@/components/Refresh.vue";
 
 export default {
   created() {
@@ -39,10 +39,22 @@ export default {
   },
 
   mounted() {
-    if(window.matchMedia("(display-mode: standalone)").matches &&
-      window.innerWidth <= 500) {
-        document.querySelector(".popToggle").style.display = "none"
-      } else { return }
+    if (
+      window.matchMedia("(display-mode: standalone)").matches &&
+      window.innerWidth <= 500
+    ) {
+      document.querySelector(".popToggle").style.display = "none";
+    } else {
+      return;
+    }
+  },
+
+  watch: {
+    $route(to, from) {
+      setTimeout(() => {
+        document.querySelector("#topNav").classList.remove("dark");
+      }, 1);
+    },
   },
 
   methods: {},
@@ -51,7 +63,7 @@ export default {
     // Register the imported components
     Navigation: Navigation,
     PopUp: PopUp,
-    Refresh: Refresh
+    Refresh: Refresh,
   },
 };
 </script>
