@@ -2,6 +2,7 @@
   <div id="app">
     <Navigation />
     <PopUp id="popup" />
+    <Refresh id="refresh"/>
     <router-view />
   </div>
 </template>
@@ -10,6 +11,7 @@
 // Imports first
 import Navigation from "@/components/Navigation.vue";
 import PopUp from "@/components/PopUp.vue";
+import Refresh from "@/components/Refresh.vue"
 
 export default {
   created() {
@@ -49,6 +51,7 @@ export default {
     // Register the imported components
     Navigation: Navigation,
     PopUp: PopUp,
+    Refresh: Refresh
   },
 };
 </script>
