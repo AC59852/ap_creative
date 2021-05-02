@@ -263,6 +263,29 @@
     #popup {
         display: none !important;
     }
+
+    #refresh {
+        height: 145px;
+        top: -20%;
+        background: none;
+        display: block;
+        opacity: 1;
+
+        div {
+            max-width: none;
+            width: 395px;
+            height: 100%;
+            box-shadow: 0 4px 16px rgb(41, 41, 41);
+
+            img {
+                display: none;
+            }
+
+            h2 {
+                margin: 2% 0 4%;
+            }
+        }
+    }
     
     #fp-nav {
         display: block !important;

@@ -10,14 +10,6 @@
     img {
         filter: brightness(0) !important;
     }
-
-    ul {
-        li {
-            a {
-                color: black !important;
-            }
-        }
-    }
 }
 
 html{position: relative; height: 100%; overflow: hidden;}
@@ -60,6 +52,10 @@ html{position: relative; height: 100%; overflow: hidden;}
 
 .slideLeft {
     transform: translateX(-100%);
+}
+
+.showRefresh {
+    display: block !important;
 }
 
 .hide {
