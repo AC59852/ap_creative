@@ -4,9 +4,17 @@ AP Creative is a collaboration showcase between Austin Caron (Web Developer) and
 
 ## Usage
 
-Currently, the site is still being developed. To view a development version of the site, click below:
+The site is live, using Firebase by Google as the host. To view the site, click below:
 
 [AP Creative](https://apcreative-5c001.web.app/)
+
+Otherwise, the site is free for download, and if you'd like to use it, there are some things to note:
+
+* The site uses a tool called fullpage.js, created by Alvaro Trigo, using a licensed purchased for single use. To make sure you aren't breaking his policies, please contact him.
+* The data is all served client-side through Vue.js' data function. If you have experience with Vue, you'll have an easy time altering this data.
+* Likewise, the gradients are stored in SASS Variables, so if you'd like to change the gradients, some experience with SASS will really help.
+
+We are also willing to replace the data for you for a fee. If you'd like to use the site, please contact us through apcreative1@gmail.com
 
 ## Installation
 
