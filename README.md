@@ -6,7 +6,7 @@ AP Creative is a collaboration showcase between Austin Caron (Web Developer) and
 
 The site is live, using Firebase by Google as the host. To view the site, click below:
 
-[AP Creative](https://apcreative-5c001.web.app/)
+[AP Creative](https://ap-creative.ca/)
 
 Otherwise, the site is free for download, and if you'd like to use it, there are some things to note:
 
